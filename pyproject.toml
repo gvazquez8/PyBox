@@ -1,0 +1,25 @@
+[project]
+name = "pybox"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Vazquez Jr.",email = "gabe.vazquez1999@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mypy (>=1.17.0,<2.0.0)",
+    "mock (>=5.2.0,<6.0.0)",
+    "plotly (>=6.2.0,<7.0.0)",
+    "fastapi (>=0.116.1,<0.117.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "opencv-python (>=4.12.0.88,<5.0.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pybox", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
